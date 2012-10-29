@@ -8,7 +8,7 @@ recipe            "git", "Installs git"
 recipe            "git::server", "Sets up a runit_service for git daemon"
 recipe            "git::source", "Installs git from source"
 
-%w{ amazon arch centos debian fedora redhat scientific ubuntu windows }.each do |os|
+%w{ amazon arch centos debian fedora redhat scientific ubuntu windows smartos }.each do |os|
   supports os
 end
 

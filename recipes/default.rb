@@ -42,6 +42,8 @@ when "mac_os_x"
     type "pkg"
     action :install
   end
+when "smartos"
+  package "scmgit"
 else
   package "git"
 end
